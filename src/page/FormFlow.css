@@ -1,0 +1,14 @@
+.form-flow-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.disable-background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 1;
+}
