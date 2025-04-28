@@ -7,7 +7,7 @@ interface FieldRowProps {
   removeMapping: (fieldName: string) => void;
 }
 export default function FieldRow({ field, removeMapping }: FieldRowProps) {
-  const {setSelectedField} = useAppContext();
+  const { setSelectedField } = useAppContext();
 
   return (
     <div className="field-row-container">
@@ -24,6 +24,9 @@ export default function FieldRow({ field, removeMapping }: FieldRowProps) {
         onClick={() => {
           if (field.mappingKey) return;
           setSelectedField(field.key);
+        }}
+        style={{
+          backgroundColor: field.mappingKey ? "#e0e0e0" : "#fff",
         }}
       />
       <button
